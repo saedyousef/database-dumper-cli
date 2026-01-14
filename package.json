@@ -1,0 +1,45 @@
+{
+  "name": "database-dumper-cli",
+  "version": "0.1.0",
+  "description": "Interactive cross-platform database dump CLI (MySQL first)",
+  "main": "dist/cli.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test test/versionMap.test.js"
+  },
+  "keywords": [
+    "cli",
+    "database",
+    "mysqldump",
+    "backup"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "extract-zip": "^2.0.1",
+    "fs-extra": "^11.2.0",
+    "ink": "^4.4.1",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^5.0.1",
+    "ora": "^7.0.1",
+    "prompts": "^2.4.2",
+    "react": "^18.2.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.19",
+    "@types/ora": "^3.2.0",
+    "@types/prompts": "^2.4.9",
+    "@types/react": "^18.2.45",
+    "typescript": "^5.3.3"
+  },
+  "optionalDependencies": {
+    "keytar": "^7.9.0"
+  }
+}
